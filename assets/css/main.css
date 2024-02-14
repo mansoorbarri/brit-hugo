@@ -19,10 +19,18 @@ body::-webkit-scrollbar-thumb {
     z-index: 2;
 }    
 
-* a{ 
+* a{
+    color: #E2E8F0;
     text-decoration: none;  
-    color: var(--accent)
 }  
+
+* a:hover{
+    color: rgb(94 234 212);
+}  
+
+* P { 
+    color: #94A3B8
+}
 
 .cursor {
     position: fixed;
@@ -66,7 +74,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: 700;
     font-size: 48px;
     color:#E2E8FA;
-    text-decoration: none;
 }    
 .home2 h3{
     margin-top: 2%;
