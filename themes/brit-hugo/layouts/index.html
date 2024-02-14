@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="cursor"></div>
+    <div>
+        <div class="Main home">
+            <div class="container home1">
+                <!-- Left Fixed Side -->
+                <div class="left">
+                <div class="col-md-6 home2">
+                    <div class="hero">
+                        <h1><a href="">{{ .Site.Params.title }}</a></h1>
+                        <h3>{{ .Site.Params.subtitle }}</h3>
+                        <p>{{ .Site.Params.description | safeHTML }}</p>
+                    </div>
+                    <div class="menu">
+                        {{- partial "left/menu.html" . -}}
+                    </div>
+                </div>
+                </div>
+                <div class="socials">
+                    {{- partial "left/socials.html" . -}}
+                </div>
+                <div class="col-md-6">
+                    {{- partial "right/hero.html" . -}}
+                </div>
+                <div id="experience" class="experience">
+                    {{- partial "right/experience.html" . -}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{- $menujs := resources.Get "js/menu.js" -}}
+{{- $Smenujs := $menujs | resources.Fingerprint "sha512" -}}
+<script src="{{ $Smenujs.Permalink }}" integrity="{{ $Smenujs.Data.Integrity }}"></script>
+{{ end }}
