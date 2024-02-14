@@ -1,0 +1,9 @@
+name = "Brit Hugo"
+description = "A simple hugo theme inspired by brittanychiang.com"
+demosite = "https://hugo-brit.pages.dev/"
+tags = ["minimal", "dark", "personal", "bootstrap"]
+min_version = "0.111.3"
+authors = [
+  {name = "Mansoor Barri", homepage = "https://mansoorbarri.com"},
+  {name = "Maheen Waris", homepage = "https://maheenwaris.com"}
+]
