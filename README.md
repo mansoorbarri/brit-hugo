@@ -27,7 +27,7 @@ hugo server
 ### General 
 
 - use descriptive `tag`, `class` or any other identifable property 
-- css properties should be in alphabetically order. For example: 
+- css properties should be in alphabetical order. For example: 
 
 **Good example:**
 ```css
