@@ -22,3 +22,37 @@ run at localhost
 ```
 hugo server 
 ```
+
+## Code standards
+### General 
+
+- use descriptive `tag`, `class` or any other identifable property 
+- css properties should be in alphabetically order. For example: 
+
+**Good example:**
+```css
+.element { 
+	color: grey; 
+	display: flex; 
+	text-decoratoin: none; 
+} 
+```
+
+**Bad example:**
+```css
+.element { 
+	text-decoratoin: none;
+	display: flex; 
+	color: grey; 
+} 
+```
+
+### Pushing code: 
+use: `add`, `update` or `remove` as the commit message. Like: 
+```
+commit -m "update: README.md" 
+```
+
+![](/_internal/commit-message.png)
+
+---
