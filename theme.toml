@@ -1,16 +1,9 @@
 name = "Brit Hugo"
-description = "Simple page inspired by Brittany Chiang's website."
-
-license = "GNU GPLv3"
-licenselink = "https://github.com/mansoorbarri/coming-soon/blob/main/LICENCE"
-
-demosite = "https://brit-hugo.pages.dev/"
-
+description = "A simple hugo theme inspired by brittanychiang.com"
+demosite = "https://hugo-brit.pages.dev/"
 tags = ["minimal", "dark", "personal", "bootstrap"]
-
+min_version = "0.111.3"
 authors = [
   {name = "Mansoor Barri", homepage = "https://mansoorbarri.com"},
   {name = "Maheen Waris", homepage = "https://maheenwaris.com"}
 ]
-
-min_version = "0.111.3"
