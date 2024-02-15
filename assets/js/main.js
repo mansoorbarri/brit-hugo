@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
       cursor.style.top = e.pageY + 'px';
     });
 });
+

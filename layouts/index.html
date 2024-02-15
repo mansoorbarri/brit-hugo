@@ -1,35 +1,67 @@
 {{ define "main" }}
-<div class="cursor"></div>
+<body>
+    <div class="cursor"></div>
     <div>
-        <div class="Main home">
+        <div class="home">
             <div class="container home1">
                 <!-- Left Fixed Side -->
-                <div class="left">
-                <div class="col-md-6 home2">
-                    <div class="hero">
-                        <h1><a href="">{{ .Site.Params.title }}</a></h1>
+                <div class="col-md-6 left">
+                    <div class="left-hero">
+                        <h1><a href="{{ .Site.Params.baseURL }}">{{ .Site.Params.title }}</a></h1>
                         <h3>{{ .Site.Params.subtitle }}</h3>
                         <p>{{ .Site.Params.description | safeHTML }}</p>
                     </div>
                     <div class="menu">
-                        {{- partial "left/menu.html" . -}}
+                        <ul>
+                            {{- partial "left/menu.html" . -}}
+                        </ul>
+                    </div>
+                    <div class="socials">
+                        {{- partial "left/socials.html" . -}}
                     </div>
                 </div>
-                </div>
-                <div class="socials">
-                    {{- partial "left/socials.html" . -}}
-                </div>
-                <div class="col-md-6">
-                    {{- partial "right/hero.html" . -}}
-                </div>
-                <div id="experience" class="experience">
-                    {{- partial "right/experience.html" . -}}
-                </div>
+
+                <!-- Right Scroll Side -->
+                <div class="col-md-6 right">
+                    <!-- about -->
+                    <div id="about" class="about">
+                        {{- partial "right/hero.html" . -}}
+                    </div>
+                    <br /><br />
+
+                    <!-- Experience -->
+                    <div id="experience" class="experience">
+                        <div>{{- partial "right/experience.html" . -}}</div>
+                    <br><br>
+
+                    <!-- Writing -->
+                    <div>
+                        <div id="writing" class="writing">
+                            {{- partial "right/writing.html" . -}}
+                            <br><br>
+                        </div>
+                    </div>
+                    <br><br>
+
+                    <!-- Footer -->
+                    <div class="mainfooter">
+                        <p>
+                            {{- .Site.Params.footer | safeHTML -}}
+                        </p>
+                    </div>
+ 
             </div>
         </div>
+        <!-- Gif -->
+        <!-- <div class="maingif">
+            <img src="assets/Gif/rotate.gif" alt="" width="30%">
+        </div> -->
+
     </div>
-</div>
-{{- $menujs := resources.Get "js/menu.js" -}}
-{{- $Smenujs := $menujs | resources.Fingerprint "sha512" -}}
-<script src="{{ $Smenujs.Permalink }}" integrity="{{ $Smenujs.Data.Integrity }}"></script>
+    {{- $menujs := resources.Get "js/menu.js" -}}
+    {{- $Smenujs := $menujs | resources.Fingerprint "sha512" -}}
+    <script src="{{ $Smenujs.Permalink }}" integrity="{{ $Smenujs.Data.Integrity }}"></script>
+</body>
+</html>
+
 {{ end }}
