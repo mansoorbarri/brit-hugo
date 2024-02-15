@@ -1,0 +1,5 @@
+{{ range .Site.Params.socials }}
+    <a href="https://{{ .name }}.com/{{ .username }}">
+        <i class="fa-brands fa-{{ .name }}"></i>
+    </a>
+{{ end }}

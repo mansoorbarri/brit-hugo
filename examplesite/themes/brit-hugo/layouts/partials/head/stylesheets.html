@@ -1,0 +1,8 @@
+{{- $cssMain := resources.Get "css/main.css" | minify -}}
+{{- $ScssMain := $cssMain | resources.Fingerprint "sha512" -}}
+
+{{- $resMain := resources.Get "css/responsive.css" | minify -}}
+{{- $SresMain := $resMain | resources.Fingerprint "sha512" -}}
+
+    <link rel="stylesheet" type="text/css" href="{{ $ScssMain.Permalink }}" integrity="{{ $ScssMain.Data.Integrity }}">
+    <link rel="stylesheet" type="text/css" href="{{ $SresMain.RelPermalink }}" integrity="{{ $ScssMain.Data.Integrity }}">
