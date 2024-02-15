@@ -48,7 +48,7 @@ hugo server
 ```
 
 ### Pushing code: 
-use: `add`, `update` or `remove` as the commit message. Like: 
+use: `fix`, `add`, `update` or `remove` as the commit message. Like: 
 ```
 commit -m "update: README.md" 
 ```
