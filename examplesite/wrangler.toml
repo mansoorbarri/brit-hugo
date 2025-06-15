@@ -1,0 +1,5 @@
+name = "brit-hugo"
+compatibility_date = "2025-06-15"
+
+[assets]
+directory = "./public"
