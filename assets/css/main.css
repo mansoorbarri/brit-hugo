@@ -1,3 +1,7 @@
+.right::-webkit-scrollbar {
+    display: none; /* WebKit browsers */
+}
+
 body::-webkit-scrollbar {
     width: 5px;            
     background-color: #0f172a;   
@@ -97,13 +101,18 @@ list-style: none;
     padding: 0%;
     padding-bottom: 2%;
 }
-.home1{
-    /* height: 100vh; */
+.home1 {
+    height: 100vh;
+    overflow: hidden;
     display: flex;
 }
-.left{
+
+ft{
     padding-top: 7%;
     overflow: hidden;
+}
+.left {
+    margin-top: 20%
 }
 .left h1 a{
     font-weight: 700;
@@ -123,8 +132,10 @@ list-style: none;
     font-size: 18px;
     color: rgb(148 163 184);
 }
-.left-hero{
+
+.left-hero {
     margin-left: 5%;
+    overflow: hidden;
 }
 
 .home5{
@@ -157,10 +168,16 @@ list-style: none;
     color: #E2E8FA;
 }
 
-/* responsive */
+/* Update existing responsive rule */
 @media screen AND (max-width:600px){
     .home1{
         display: block;
+        height: auto; /* Allow natural height on mobile */
+        overflow: visible; /* Allow normal scrolling on mobile */
+    }
+    .right {
+        height: auto; /* Remove fixed height on mobile */
+        overflow-y: visible; /* Normal scrolling on mobile */
     }
     .left-hero{
         margin-left: 3%;
@@ -177,12 +194,14 @@ list-style: none;
 
 /* left scroll side */
 /* about */
-.right{
+.right {
     padding-top: 9%;
-    /* background-color: green; */
-    /* height: 100vh; */
     padding-left: 2%;
     padding-right: 4%;
+    height: 100vh;
+    overflow-y: auto; /* Enable scrolling on right side only */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 .about h3{
     font-size: 20px;
