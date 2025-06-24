@@ -78,7 +78,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Styles for the border span when active */
 .menu li.active .active-border {
-    @apply border-b border-white w-[60px] mr-[15px] mb-[3px] transition-width duration-500 ease-in-out;
+    @apply border-b border-white w-[60px] mr-[15px] mb-[3px] duration-500 ease-in-out;
 }
 
 /* Styles for the text span when active */

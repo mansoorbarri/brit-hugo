@@ -1,45 +1,25 @@
 // List menu items
-const listItems = document.querySelectorAll('.menu li');
+const listItems = document.querySelectorAll('ul li');
 
-// Add event listeners to each list item
-listItems.forEach((item, index) => {
-    const spanElement = item.querySelector('span'); // Select the span element within each list item
+// Function to set the active menu item
+function setActiveMenuItem(itemToActivate) {
+    listItems.forEach((item) => {
+        item.classList.remove('active');
+        item.classList.add('unactive');
+    });
 
-    if (index === 0) {
-        item.classList.add('active');
-        if (spanElement) {
-            spanElement.classList.add('active-border');
-        }
-    } else {
-        item.classList.add('unactive'); // Add 'unactive' class to other items
-        if (spanElement) {
-            spanElement.classList.add('unactive-border');
-        }
-    }
+    itemToActivate.classList.remove('unactive');
+    itemToActivate.classList.add('active');
+}
 
-    item.addEventListener('mouseover', () => {
-        // Add 'unactive' class to all items except the hovered one
-        listItems.forEach((otherItem) => {
-            if (otherItem !== item) {
-                otherItem.classList.add('unactive');
-                const otherSpan = otherItem.querySelector('span');
-                if (otherSpan) {
-                    otherSpan.classList.add('unactive-border');
-                    otherSpan.classList.remove('active-border');
-                }
-            }
-        });
+// Initial setup: set the first item as active
+if (listItems.length > 0) {
+    setActiveMenuItem(listItems[0]);
+}
 
-        // Remove 'unactive' class from the hovered item
-        item.classList.remove('unactive');
-
-        // Add 'active' class to the hovered item
-        item.classList.add('active');
-
-        // Add 'active-border' class to the span within the hovered item
-        if (spanElement) {
-            spanElement.classList.add('active-border');
-            spanElement.classList.remove('unactive-border');
-        }
+// Optional: If you want clicking to also make an item active
+listItems.forEach((item) => {
+    item.addEventListener('click', () => {
+        setActiveMenuItem(item);
     });
 });
