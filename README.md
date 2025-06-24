@@ -2,5 +2,5 @@
 A hugo theme inspired by brittanychiang.com
 
 ## todo
-- [] code cleanup
-- [] right-only scroll
+- [ ] change HTML code to Hugo 
+- [ ] center footer

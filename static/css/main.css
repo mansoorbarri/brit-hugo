@@ -680,10 +680,6 @@ video {
   width: 1rem;
 }
 
-.w-8 {
-  width: 2rem;
-}
-
 .w-\[125\%\] {
   width: 125%;
 }
@@ -772,11 +768,6 @@ video {
 .border-slate-400 {
   --tw-border-opacity: 1;
   border-color: rgb(148 163 184 / var(--tw-border-opacity, 1));
-}
-
-.border-teal-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(45 212 191 / var(--tw-border-opacity, 1));
 }
 
 .bg-slate-800 {
@@ -955,11 +946,6 @@ video {
 .text-teal-300 {
   --tw-text-opacity: 1;
   color: rgb(94 234 212 / var(--tw-text-opacity, 1));
-}
-
-.text-teal-400 {
-  --tw-text-opacity: 1;
-  color: rgb(45 212 191 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
