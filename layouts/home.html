@@ -2,41 +2,49 @@
 <body>
     <div class="cursor"></div>
     <div>
-        <div class="home">
-            <div class="container home1">
+        <!-- Outer container for background and padding -->
+        <div class="h-auto bg-slate-900 text-white p-0 pb-[2%]">
+            <!-- Flex container for left/right layout -->
+            <div class="h-screen overflow-hidden flex">
+
                 <!-- Left Fixed Side -->
-                <div class="col-md-6 left">
-                    <div class="left-hero">
-                        <h1><a href="{{ .Site.Params.baseURL }}">{{ .Site.Params.title }}</a></h1>
-                        <h3>{{ .Site.Params.subtitle }}</h3>
-                        <p>{{ .Site.Params.description | safeHTML }}</p>
+                <!-- Use flex-none to prevent shrinking, and give it a width -->
+                <div class="w-1/2 md:w-1/3 lg:w-2/5 flex-none ml-[5%] mt-[20%]">
+                    <div class="overflow-hidden">
+                        <h1><a href="{{ .Site.Params.baseURL }}" class="font-bold text-[48px] text-slate-200 no-underline">{{ .Site.Params.title }}</a></h1>
+                        <h3 class="mt-[2%] font-medium text-[22px] text-slate-200">{{ .Site.Params.subtitle }}</h3>
+                        <p class="mt-[3%] font-normal text-lg text-slate-400">{{ .Site.Params.description | safeHTML }}</p>
                     </div>
-                    <div class="menu">
-                        <ul>
+                    <div class="pt-11">
+                        <ul class="list-none">
                             {{- partial "left/menu.html" . -}}
                         </ul>
                     </div>
-                    <div class="socials">
+                    <div class="mt-[15%] flex ml-[3%]">
                         {{- partial "left/socials.html" . -}}
                     </div>
                 </div>
 
                 <!-- Right Scroll Side -->
-                <div class="col-md-6 right">
+                <!-- Use flex-grow to let this section take the remaining space -->
+                <div class="flex-grow pt-[9%] pl-[2%] pr-[4%] h-screen overflow-y-auto scrollbar-none">
                     <!-- about -->
                     <div id="about" class="about">
-                        {{- partial "right/hero.html" . -}}
+                        <h3 class="text-[20px] hidden">About</h3>
+                        <p class="text-slate-400 font-sans"> {{ .Site.Params.about | safeHTML }} </p>
                     </div>
-                    <br /><br />
+                    <br><br>
 
                     <!-- Experience -->
                     <div id="experience" class="experience">
+                        <div class="hidden pb-[7%]">Experience</div>
                         <div>{{- partial "right/experience.html" . -}}</div>
                     <br><br>
 
                     <!-- Writing -->
                     <div>
                         <div id="writing" class="writing">
+                            <div class="hidden">Writing</div>
                             {{- partial "right/writing.html" . -}}
                             <br><br>
                         </div>
@@ -44,23 +52,21 @@
                     <br><br>
 
                     <!-- Footer -->
-                    <div class="mainfooter">
+                    <div class="text-slate-400 text-sm font-normal text-center">
                         <p>
                             {{- .Site.Params.footer | safeHTML -}}
                         </p>
                     </div>
  
-            </div>
-        </div>
+                </div> <!-- End of Right Scroll Side -->
+            </div> <!-- End of Flex container -->
+        </div> <!-- End of Outer container -->
         <!-- Gif -->
         <!-- <div class="maingif">
             <img src="assets/Gif/rotate.gif" alt="" width="30%">
         </div> -->
 
     </div>
-    {{- $menujs := resources.Get "js/menu.js" -}}
-    {{- $Smenujs := $menujs | resources.Fingerprint "sha512" -}}
-    <script src="{{ $Smenujs.Permalink }}" integrity="{{ $Smenujs.Data.Integrity }}"></script>
 </body>
 </html>
 

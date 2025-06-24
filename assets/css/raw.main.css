@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* scrollbar */
+.right::-webkit-scrollbar {
+    display: none; /* WebKit browsers */
+}
+
+body::-webkit-scrollbar {
+    width: 5px;            
+    background-color: #0f172a;   
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(59,130,246, 0);   
+    border-radius: 10px;       
+}
+
+/* drag selection  */
+::selection{ 
+    background-color: rgb(94 234 212);
+    color: rgb(19 78 74)
+}   
+
+/* cursor  */
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transition: all 0.1s ease;
+}
+  
+.cursor {
+    position: fixed;
+    width: 1000px; /* Increased size */
+    height: 1000px; /* Increased size */
+    border-radius: 50%;
+    border-color: transparent;
+    background: radial-gradient(circle, rgba(59,130,246, 0.1) 0%, rgba(255, 255, 255, 0) 50%); /* Radial gradient for glowing effect */
+    pointer-events: none;
+    transform: translate(-50%, -50%); /* Center the cursor */
+    z-index: 1; /* Set a z-index higher than the text */
+}
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+* a{
+    color: #E2E8F0;
+    text-decoration: none;  
+}  
+
+.about p a {
+    font-weight: 400 bold;
+    color: #E2E8FA;
+    text-decoration: none;
+}
+
+.about p a {
+    @apply font-bold text-slate-200 no-underline;
+}
+
+/* left menu  */
+/* main.css or similar */
+
+/* Styles for active link */
+.menu li.active a {
+    @apply font-bold text-white flex items-center py-2; /* Tailwind classes applied */
+}
+
+/* Styles for the border span when active */
+.menu li.active .active-border {
+    @apply border-b border-white w-[60px] mr-[15px] mb-[3px] transition-width duration-500 ease-in-out;
+}
+
+/* Styles for the text span when active */
+.menu li.active .active-text { /* Assuming you added this class if needed */
+    @apply ms-2 tracking-wide;
+}
+
+/* Styles for inactive link */
+.menu li.unactive a {
+    @apply text-xs text-gray-500 no-underline font-normal flex items-center py-2;
+}
+
+/* Styles for the border span when inactive */
+.menu li.unactive .unactive-border {
+    @apply border-b border-gray-500 w-[40px] mr-[15px] mb-[3px];
+}
+
+/* Styles for the text span when inactive */
+.menu li.unactive .unactive-text { /* Assuming you added this class if needed */
+    @apply ms-2;
+}
