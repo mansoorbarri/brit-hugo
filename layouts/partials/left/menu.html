@@ -1,22 +1,35 @@
 <ul>
-    <li class="">
-        <a href="#about">
-            <span class=""></span>
-            <span class="ms-2">About</span>
+    {{/* About - Initial state will be 'active' by JS */}}
+    <li class="menu-item-about active"> {{/* JS adds 'active' */}}
+        <a href="#about" class="flex items-center py-2 font-bold"> {{/* Base styles for active text, other styles handled by spans */}}
+            {{/* JS adds 'active-border' to this span. This span needs the active-border styles. */}}
+            <span class="border-b border-white w-[60px] mr-[15px] mb-[3px] transition-width duration-500 ease-in-out active-border"></span>
+            {{/* JS adds 'active' class to the <li>, so this span uses active text styles. */}}
+            <span class="ms-2 tracking-wide">About</span>
         </a>
-    </li><br>
+    </li>
+    <br>
 
-    <li class="">
-        <a href="#experience">
-            <span class=""></span>
+    {{/* Experience - Initial state will be 'unactive' by JS */}}
+    <li class="menu-item-experience unactive"> {{/* JS adds 'unactive' */}}
+        <a href="#experience" class="flex items-center py-2 text-xs text-gray-500 no-underline font-normal"> {{/* Base styles for unactive text, other styles handled by spans */}}
+            {{/* JS adds 'unactive-border' to this span. This span needs the unactive-border styles. */}}
+            <span class="border-b border-gray-500 w-[40px] mr-[15px] mb-[3px] unactive-border"></span>
+            {{/* JS adds 'unactive' class to the <li>, so this span uses unactive text styles. */}}
             <span class="ms-2">Experience</span>
         </a>
-    </li><br>
+    </li>
+    <br>
 
-    <li class="">
-        <a href="#projects">
-            <span class=""></span>
+    {{/* Projects - Initial state will be 'unactive' by JS */}}
+    <li class="menu-item-projects unactive"> {{/* JS adds 'unactive' */}}
+        <a href="#projects" class="flex items-center py-2 text-xs text-gray-500 no-underline font-normal"> {{/* Base styles for unactive text, other styles handled by spans */}}
+            <span class="border-b border-gray-500 w-[40px] mr-[15px] mb-[3px] unactive-border"></span>
             <span class="ms-2">Projects</span>
         </a>
-    </li><br>
+    </li>
+    <br>
 </ul>
+
+{{- $menujs := resources.Get "js/menu.js" -}}
+<script src="{{ $menujs.Permalink }}"></script>
