@@ -6,6 +6,3 @@ A hugo theme inspired by brittanychiang.com
   <br>
   <i>Expect frequent changes and incomplete features.</i>
 </p>
-
-## todo
-- [ ] change HTML code to Hugo 
