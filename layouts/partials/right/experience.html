@@ -1,204 +1,41 @@
 <h3 class="experienceheading hidden pb-[7%]">Experience</h3>
+
+{{ range .Site.Params.experience }}
 <div class="experience1 flex p-[1%] hover:bg-slate-800 hover:rounded-md">
-    <div class="experience1a w-[130%] text-xs mt-[2%] text-slate-400"><b>2018 - present</b></div>
-    <div class="experience1b pl-[2%]">
-        <h4 class="pt-0 mt-0"><a href="" class="text-lg no-underline text-slate-200 hover:text-teal-300">Lead Engineer · Upstatement</a></h4>
-        <p class="mb-2 m-0 text-slate-400 text-xs"><b>Senior Engineer</b></p>
-        <p class="m-0 text-slate-400 text-xs">
-            Build, style, and ship high-quality websites, design
-            systems, mobile apps, and digital experiences for a
-            diverse array of projects for clients including Harvard
-            Business School, Everytown for Gun Safety, Pratt
-            Institute, Koala Health, Vanderbilt University, The 19th
-            News, and more. Provide leadership within engineering
-            department through close collaboration, knowledge shares,
-            and spearheading the development of internal tools.
-        </p>
-        <br>
-        <div class="experience1c mt-[2%] mb-[3%]">
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">JavaScript</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">TypeScript</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">HTML & SCSS</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">React</small>
-        </div>
-        <div class="experience1c mt-[2%] mb-[3%]">
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">Next.js</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">React Native</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">WordPress</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">Contentful</small>
-        </div>
-        <div class="experience1c mt-[2%] mb-[3%]">
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">Node.js</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">PHP</small>
-        </div>
+    <div class="experience1a w-[130%] text-xs mt-[2%] text-slate-400">
+        <b>{{ .dates }}</b>
     </div>
-</div>
-<br /><br />
-<div class="experience1 flex p-[1%] hover:bg-slate-800 hover:rounded-md">
-    <div class="experience2a w-[65%] text-xs mt-[2%] text-slate-400"><b>JULY - DEC 2018 </b></div>
-    <div class="experience1b pl-[2%]">
-        <h4 class="pt-0 mt-0"><a href="" class="text-lg no-underline text-slate-200 hover:text-teal-300">UI Engineer Co-op Apple</a></h4>
-        <p class="m-0 text-slate-400 text-xs">
-            Developed and styled interactive web apps for Apple Music,
-            including the user interface of Apple Music's embeddable
-            web player widget for in-browser user authorization and
-            full song playback.
-        </p>
-        <br>
-        <div class="experience1c mt-[2%] mb-[3%]">
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">Ember</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">SCSS</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">JavaScript</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">MusicKit.js</small>
-        </div>
-    </div>
-</div>
-<br /><br />
-<div class="experience1 flex p-[1%] hover:bg-slate-800 hover:rounded-md">
-    <div class="experience3a w-[55%] text-xs mt-[2%] text-slate-400"><b>JULY - DEC 2017</b></div>
-    <div class="experience1b pl-[2%]">
-        <h4 class="pt-0 mt-0"><a href="" class="text-lg no-underline text-slate-200 hover:text-teal-300">Developer · Scout Studio</a></h4>
-        <p class="m-0 text-slate-400 text-xs">
-            Collaborated with other student designers and engineers on
-            pro-bono projects to create new brands, design systems,
-            and websites for organizations in the community.
-        </p>
-        <br>
-        <div class="experience1c mt-[2%] mb-[3%]">
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">Jekyll</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">SCSS</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">JavaScript</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">Wordpress</small>
-        </div>
-    </div>
-</div>
-<br /><br />
-<div class="experience1 flex p-[1%] hover:bg-slate-800 hover:rounded-md">
-    <div class="experience4a w-[37%] text-xs mt-[2%] text-slate-400"><b>JULY — DEC 2016</b></div>
-    <div class="experience1b pl-[2%]">
-        <h4 class="pt-0 mt-0"><a href="" class="text-lg no-underline text-slate-200 hover:text-teal-300">Software Engineer Co-op · Starry</a></h4>
-        <p class="m-0 text-slate-400 text-xs">
-            Worked with the UI team to engineer and improve major
-            features of Starry's customer-facing Android app.
-        </p>
-        <br>
-        <div class="experience1c mt-[2%] mb-[3%]">
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">Cordova</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">Backbone</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">JavaScript</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">CSS</small>
-        </div>
-    </div>
-</div>
-<br /><br />
-<div class="experience1 flex p-[1%] hover:bg-slate-800 hover:rounded-md">
-    <div class="experience5a w-[55%] text-xs mt-[2%] text-slate-400"><b>JULY — DEC 2015</b></div>
     <div class="experience1b pl-[2%]">
         <h4 class="pt-0 mt-0">
-            <a href="" class="text-lg no-underline text-slate-200 hover:text-teal-300">Creative Technologist Co-op · MullenLowe U.S.</a>
+            <a
+                href="{{ .url | safeURL }}"
+                class="text-lg no-underline text-slate-200 hover:text-teal-300"
+                >{{ .title }}</a
+            >
         </h4>
-        <p class="m-0 text-slate-400 text-xs">
-            Developed, maintained, and shipped production code for
-            client websites. Clients included JetBlue, Lovesac, U.S.
-            Cellular, U.S. Department of Defense, and more.
-        </p>
-        <br>
-        <div class="experience1c mt-[2%] mb-[3%]">
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">HTML</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">CSS</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">JavaScript</small>
-            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs">Jquery</small>
+        {{ with .subtitle }}
+        <p class="mb-2 m-0 text-slate-400 text-xs"><b>{{ . }}</b></p>
+        {{ end }}
+        <p class="m-0 text-slate-400 text-xs">{{ .description }}</p>
+        <br />
+        {{ if .technologies }}
+        <div class="experience1c mt-[2%] mb-[3%] flex flex-wrap gap-2">
+            {{ range .technologies }}
+            <small class="px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full text-xs mc-2"
+                >{{ . }}</small
+            >
+            {{ end }}
         </div>
+        {{ end }}
     </div>
 </div>
-<br>
-<p class="resume">
-    <a href="#" class="no-underline text-slate-200 text-lg font-semibold p-[2%] hover:text-teal-300">View Full Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-</p>
-</div>
-</div>
-<br><br>
+<br /><br />
+{{ end }}
 
-<!-- Projects -->
-<div>
-<div id="projects" class="projects">
-<h3 class="projectsheading hidden pb-[7%]">Projects</h3>
-<div class="project1 flex pt-[3%] pb-[3%] pr-[3%] hover:bg-slate-800 hover:rounded-md">
-    <div class="project1a flex justify-center items-start pt-[3%] pl-[1%] pr-[1%] w-full">
-        <img src="/images/project1.png" alt="" width="100%">
-    </div>
-    <div class="project1b pl-[3%]">
-        <h4><a href="" class="text-lg no-underline text-slate-200">Build a spotify connected app</a></h4>
-        <p class="m-0 text-slate-400 text-xs font-medium">
-            Video course that teaches how to build a web 
-            app with the Spotify Web API. Topics covered 
-            include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.
-        </p>
-    </div>
-</div>
-<br><br>
-<div class="project1 flex pt-[3%] pb-[3%] pr-[3%] hover:bg-slate-800 hover:rounded-md">
-    <div class="project1a project2 flex justify-center items-start pt-[3%] pl-[1%] pr-[1%] w-[125%]">
-        <img src="/images/project2.png" alt="" width="100%">
-    </div>
-    <div class="project1b pl-[3%]">
-        <h4><a href="" class="text-lg no-underline text-slate-200">Spotify Profile</a></h4>
-        <p class="m-0 text-slate-400 text-xs font-medium">
-            Web app for visualizing personalized Spotify data. View 
-            your top artists, top tracks, recently played tracks, and 
-            detailed audio information about each track. Create and 
-            save new playlists of recommended tracks based on your
-             existing playlists and more.
-        </p>
-        <div class="project2star pt-[3%] flex text-slate-200 hover:text-teal-300">
-            <i class="fa-solid fa-star flex justify-center items-center pr-[1%]"></i><p class="mt-[2%] text-base hover:text-teal-300">599</p>
-        </div>
-        <div class="project2small mt-[5%] mb-[3%]">
-            <small class="text-xs px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full">React</small>
-            <small class="text-xs px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full">Express</small>
-            <small class="text-xs px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full">Spotify API</small>
-            <small class="text-xs px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full">Heroku</small>
-        </div>
-    </div>
-</div>
-<br><br>
-<div class="project1 flex pt-[3%] pb-[3%] pr-[3%] hover:bg-slate-800 hover:rounded-md">
-    <div class="project3 flex justify-center items-start pt-[3%] pl-[1%] pr-[1%] w-[40%]">
-        <img src="/images/project3.png" alt="" width="100%">
-    </div>
-    <div class="project1b pl-[3%]">
-        <h4><a href="" class="text-lg no-underline text-slate-200">Halcyon Theme</a></h4>
-        <p class="m-0 text-slate-400 text-xs font-medium">
-            Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more.
-        </p>
-        <div class="project3install pt-[3%] flex items-center hover:text-teal-300">
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>
-            <p class="ml-[2%] hover:text-teal-300">100k+ Installs</p>
-        </div>
-    </div>
-</div>
-<br><br>
-<div class="project1 flex pt-[3%] pb-[3%] pr-[3%] hover:bg-slate-800 hover:rounded-md">
-    <div class="project3 flex justify-center items-start pt-[3%] pl-[1%] pr-[1%] w-[40%]">
-        <img src="/images/project4.png" alt="" width="100%">
-    </div>
-    <div class="project1b pl-[3%]">
-        <h4><a href="" class="text-lg no-underline text-slate-200">brittanychiang.com (v4)</a></h4>
-        <p class="m-0 text-slate-400 text-xs font-medium">
-            An old portfolio site built with Gatsby with 6k+ stars and 3k+ forks
-        </p>
-        <div class="project2star pt-[3%] flex text-slate-200 hover:text-teal-300">
-            <i class="fa-solid fa-star flex justify-center items-center pr-[1%]"></i><p class="mt-[2%] text-base hover:text-teal-300">6994</p>
-        </div>
-        <div class="project2small mt-[5%] mb-[3%]">
-            <small class="text-xs px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full">Gatsby</small>
-            <small class="text-xs px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full">Styled Components</small>
-            <small class="text-xs px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full">Netify</small>
-        </div>
-    </div>
-</div>
-<br><br>
 <p class="resume">
-    <a href="#" class="no-underline text-slate-200 text-lg font-semibold p-[2%] hover:text-teal-300">View Full Projects Archive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <a
+        href="{{ .Site.Params.resumeLink | default "#" | safeURL }}"
+        class="no-underline text-slate-200 text-lg font-semibold p-[2%] hover:text-teal-300"
+        >View Full Resume <i class="fa-solid fa-arrow-up-right-from-square"></i
+    ></a>
 </p>
-</div>

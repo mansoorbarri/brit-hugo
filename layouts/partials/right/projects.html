@@ -1,0 +1,52 @@
+<h3 class="projectsheading hidden pb-[7%]">Projects</h3>
+
+{{ range .Site.Params.project }}
+<div class="project1 flex pt-[3%] pb-[3%] pr-[3%] hover:bg-slate-800 hover:rounded-md">
+    <div class="project1a flex justify-center items-start pt-[3%] pl-[1%] pr-[1%] w-full">
+        {{ with .image }}
+        <!-- CHANGED FROM $.title TO .title -->
+        <img src="{{ . | relURL }}"width="100%" />
+        {{ end }}
+    </div>
+    <div class="project1b pl-[3%]">
+        <h4>
+            <a href="{{ .url | safeURL }}" class="text-lg no-underline text-slate-200">{{ .title }}</a>
+        </h4>
+        <p class="m-0 text-slate-400 text-xs font-medium">{{ .description }}</p>
+
+        {{ if .stars }}
+        <div class="project2star pt-[3%] flex text-slate-200 hover:text-teal-300">
+            <i class="fa-solid fa-star flex justify-center items-center pr-[1%]"></i>
+            <p class="mt-[2%] text-base hover:text-teal-300">{{ .stars }}</p>
+        </div>
+        {{ end }}
+
+        {{ if .installs }}
+        <div class="project3install pt-[3%] flex items-center hover:text-teal-300">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            <p class="ml-[2%] hover:text-teal-300">{{ .installs }} Installs</p>
+        </div>
+        {{ end }}
+
+        {{ if .technologies }}
+        <div class="project2small mt-[5%] mb-[3%] flex flex-wrap gap-2">
+            {{ range .technologies }}
+            <small class="text-xs px-3 py-1.5 text-teal-300 bg-slate-800 rounded-full"
+                >{{ . }}</small
+            >
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+<br /><br />
+{{ end }}
+
+<p class="resume">
+    <a
+        href="{{ .Site.Params.projectsArchiveLink | default "#" | safeURL }}"
+        class="no-underline text-slate-200 text-lg font-semibold p-[2%] hover:text-teal-300"
+        >View Full Projects Archive
+        <i class="fa-solid fa-arrow-up-right-from-square"></i
+    ></a>
+</p>
