@@ -1,5 +1,6 @@
 baseURL = "https://brit-hugo.mansoorbarri.com"
 languageCode = "en-gb"
+themes = "brit-hugo"
 
 [Params]
     title = "Brit Hugo"
