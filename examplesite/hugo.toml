@@ -1,6 +1,5 @@
 baseURL = "https://brit-hugo.mansoorbarri.com"
 languageCode = "en-gb"
-themes = "brit-hugo"
 
 [Params]
     title = "Brit Hugo"
@@ -80,14 +79,14 @@ themes = "brit-hugo"
 
 # Projects Section Data (add these blocks)
 [[Params.project]]
-  image = "/images/project1.png"
+  image = "/favicon.png"
   title = "Build a spotify connected app"
   description = "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more."
   technologies = [] # Not all projects have technologies listed
   url = "#"
 
 [[Params.project]]
-  image = "/images/project2.png"
+  image = "/favicon.png"
   title = "Spotify Profile"
   description = "Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
   technologies = ["React", "Express", "Spotify API", "Heroku"]
@@ -95,14 +94,14 @@ themes = "brit-hugo"
   url = "#"
 
 [[Params.project]]
-  image = "/images/project3.png"
+  image = "/favicon.png"
   title = "Halcyon Theme"
   description = "Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more."
   installs = "100k+" # Or a number if you want to sort
   url = "#"
 
 [[Params.project]]
-  image = "/images/project4.png"
+  image = "/favicon.png"
   title = "brittanychiang.com (v4)"
   description = "An old portfolio site built with Gatsby with 6k+ stars and 3k+ forks"
   technologies = ["Gatsby", "Styled Components", "Netify"]
