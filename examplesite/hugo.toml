@@ -1,0 +1,112 @@
+baseURL = "https://brit-hugo.mansoorbarri.com"
+languageCode = "en-gb"
+theme = "brit-hugo"
+
+[Params]
+    title = "Brit Hugo"
+    subtitle = "Inspired by Brittany Chiang"
+    description = "I build pixel-perfect, engaging,<br> and accessible digital experience."
+    favicon = "/favicon.png"
+    about = '''
+        Back in 2012, I decided to try my hand at creating custom Tumblr
+        themes and tumbled head first into the rabbit hole of coding and
+        web development. Fast-forward to today, and I’ve had the
+        privilege of building software for an
+        <a href="">advertising agency</a>, a <a href="">start-up</a>, a
+        <a href="">student-led design studio</a>, and a
+        <a href="">huge corporation</a>.
+        <br><br>
+        My main focus these days is building products and leading
+        projects for our clients at <a href="">Upstatement</a>. I most
+        enjoy building software in the sweet spot where design and
+        engineering meet — things that look good but are also built well
+        under the hood. In my free time, I've also released an
+        <a href="">online video course</a> that covers everything you
+        need to know to build a web app with the Spotify API.
+        <br><br>
+        When I’m not at the computer, I’m usually rock climbing,
+        reading, hanging out with my wife and two cats, or running
+        around Hyrule searching for <a href="">Korok seeds</a>.
+    '''
+    footer = "2024 All Rights Reserved | Made using <a href='gohugo.io'>Hugo</a>"
+    resumeLink = "#" # Link to your full resume - REPLACE WITH REAL LINK
+    projectsArchiveLink = "#" # Link to your full projects archive - REPLACE WITH REAL LINK
+
+    socials = [
+        {name = "twitter", username = "joedoe"},
+        {name = "facebook", username = "joedoe"},
+        {name = "github", username = "joedoe"},
+        {name = "instagram", username = "joedoe"},
+        {name = "tiktok", username = "joedoe"},
+    ]
+
+# Experience Section Data (add these blocks)
+[[Params.experience]]
+  dates = "2018 - present"
+  title = "Lead Engineer · Upstatement"
+  subtitle = "Senior Engineer" # Optional, if you have a subtitle for the role
+  description = "Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools."
+  technologies = ["JavaScript", "TypeScript", "HTML & SCSS", "React", "Next.js", "React Native", "WordPress", "Contentful", "Node.js", "PHP"]
+  url = "#" # Or a link to a company website
+
+[[Params.experience]]
+  dates = "JULY - DEC 2018"
+  title = "UI Engineer Co-op Apple"
+  description = "Developed and styled interactive web apps for Apple Music, including the user interface of Apple Music's embeddable web player widget for in-browser user authorization and full song playback."
+  technologies = ["Ember", "SCSS", "JavaScript", "MusicKit.js"]
+  url = "#"
+
+[[Params.experience]]
+  dates = "JULY - DEC 2017"
+  title = "Developer · Scout Studio"
+  description = "Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community."
+  technologies = ["Jekyll", "SCSS", "JavaScript", "Wordpress"]
+  url = "#"
+
+[[Params.experience]]
+  dates = "JULY — DEC 2016"
+  title = "Software Engineer Co-op · Starry"
+  description = "Worked with the UI team to engineer and improve major features of Starry's customer-facing Android app."
+  technologies = ["Cordova", "Backbone", "JavaScript", "CSS"]
+  url = "#"
+
+[[Params.experience]]
+  dates = "JULY — DEC 2015"
+  title = "Creative Technologist Co-op · MullenLowe U.S."
+  description = "Developed, maintained, and shipped production code for client websites. Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more."
+  technologies = ["HTML", "CSS", "JavaScript", "Jquery"]
+  url = "#"
+
+
+# Projects Section Data (add these blocks)
+[[Params.project]]
+  image = "/favicon.png"
+  title = "Build a spotify connected app"
+  description = "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more."
+  technologies = [] # Not all projects have technologies listed
+  url = "#"
+
+[[Params.project]]
+  image = "/favicon.png"
+  title = "Spotify Profile"
+  description = "Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
+  technologies = ["React", "Express", "Spotify API", "Heroku"]
+  stars = "599" # Store as string or int
+  url = "#"
+
+[[Params.project]]
+  image = "/favicon.png"
+  title = "Halcyon Theme"
+  description = "Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more."
+  installs = "100k+" # Or a number if you want to sort
+  url = "#"
+
+[[Params.project]]
+  image = "/favicon.png"
+  title = "brittanychiang.com (v4)"
+  description = "An old portfolio site built with Gatsby with 6k+ stars and 3k+ forks"
+  technologies = ["Gatsby", "Styled Components", "Netify"]
+  stars = "6994"
+  url = "#"
+
+disableKinds = ["taxonomy", "taxonomyTerm"]

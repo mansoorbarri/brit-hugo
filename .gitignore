@@ -1,4 +1,3 @@
 .hugo_build.lock
-hugo.toml
 public/
 node_modules/
