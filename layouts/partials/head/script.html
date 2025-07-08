@@ -1,2 +1,5 @@
 {{- $js := resources.Get "js/main.js" -}}
 <script src="{{ $js.Permalink }}"></script>
+
+{{- $jsMenu := resources.Get "js/menu.js" -}}
+<script src="{{ $jsMenu.Permalink }}"></script>
