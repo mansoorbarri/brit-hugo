@@ -108,3 +108,4 @@ languageCode = "en-gb"
   stars = "6994"
   url = "#"
 
+disableKinds = ["taxonomy", "taxonomyTerm"]
